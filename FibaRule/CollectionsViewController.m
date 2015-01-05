@@ -10,7 +10,7 @@
 #import "Collection.h"
 #import "DataManager.h"
 #import "CollectionManager.h"
-#import <IDMPhotoBrowser.h>
+#import "PhotoViewer.h"
 
 @implementation CollectionsViewController
 
@@ -20,7 +20,7 @@
     
     self.title = @"我的收藏";
     
-    [[NSNotificationCenter defaultCenter] addObserverForName:kFiba2014CollectionChanged object:nil queue:nil usingBlock:^(NSNotification * note){
+    [[NSNotificationCenter defaultCenter] addObserverForName:kCollectionChanged object:nil queue:nil usingBlock:^(NSNotification * note){
         self.collections = [[CollectionManager defaultInstance] fiba2014Collections];
         [self.tableView reloadData];
     }];
@@ -60,11 +60,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     Collection * collection = self.collections[indexPath.row];
-    NSArray * urls = [DataManager fiba2014PhotoUrls];   // TODO: 不同的收藏应该展示不同的源图
-//    NSArray * photos = [DataManager fiba2014Photos];    // TODO: 同上
+    NSArray * urls = [DataManager photoUrlsForCollectionType:self.collectionType];
+    NSArray * photos = [DataManager photosForCollectionType:self.collectionType];
     NSUInteger index = [urls indexOfObject:collection.url];
     if (index != NSNotFound) {
-        [[CollectionManager defaultInstance] showFibaRulesInViewController:self withPage:index];
+        [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:index];
     }
     
 }

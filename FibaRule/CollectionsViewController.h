@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Collection.h"
 
 @interface CollectionsViewController : UITableViewController
 
 @property (nonatomic, weak) NSArray * collections;
+@property (nonatomic) CollectionType collectionType;
 
 @end

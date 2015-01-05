@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    CollectionFiba2012 = 1,
-    CollectionFiba2014,
+    CollectionFiba2014 = 1,
+    CollectionFiba2014Interpretation,
     
 }CollectionType;
 

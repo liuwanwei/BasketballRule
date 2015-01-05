@@ -31,10 +31,11 @@
 		FBA8A2881A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2731A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m */; };
 		FBA8A2891A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2751A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m */; };
 		FBA8A28A1A597FAE0054AEF9 /* NSString+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2771A597FAE0054AEF9 /* NSString+Additional.m */; };
-		FBA8A28B1A597FAE0054AEF9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2781A597FAE0054AEF9 /* README.md */; };
 		FBA8A28C1A597FAE0054AEF9 /* TextEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A27A1A597FAE0054AEF9 /* TextEditViewController.m */; };
 		FBA8A28D1A597FAE0054AEF9 /* UIImageView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A27C1A597FAE0054AEF9 /* UIImageView+Additional.m */; };
 		FBA8A28E1A597FAE0054AEF9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A27E1A597FAE0054AEF9 /* Utils.m */; };
+		FBAC91E21A5A9F210052414C /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC91E11A5A9F210052414C /* DataSource.m */; };
+		FBAC91E51A5AC3850052414C /* PhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC91E41A5AC3850052414C /* PhotoViewer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,10 @@
 		FBA8A27C1A597FAE0054AEF9 /* UIImageView+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Additional.m"; sourceTree = "<group>"; };
 		FBA8A27D1A597FAE0054AEF9 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		FBA8A27E1A597FAE0054AEF9 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		FBAC91E01A5A9F210052414C /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		FBAC91E11A5A9F210052414C /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		FBAC91E31A5AC3850052414C /* PhotoViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewer.h; sourceTree = "<group>"; };
+		FBAC91E41A5AC3850052414C /* PhotoViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +157,8 @@
 				FB2D087A1A5996F500A6AF77 /* Collection.m */,
 				FB2D08761A59958A00A6AF77 /* CollectionManager.h */,
 				FB2D08771A59958A00A6AF77 /* CollectionManager.m */,
+				FBAC91E01A5A9F210052414C /* DataSource.h */,
+				FBAC91E11A5A9F210052414C /* DataSource.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -181,6 +188,8 @@
 		FBA8A2351A5971010054AEF9 /* FibaRule */ = {
 			isa = PBXGroup;
 			children = (
+				FBAC91E31A5AC3850052414C /* PhotoViewer.h */,
+				FBAC91E41A5AC3850052414C /* PhotoViewer.m */,
 				FBA8A23A1A5971010054AEF9 /* AppDelegate.h */,
 				FBA8A23B1A5971010054AEF9 /* AppDelegate.m */,
 				FBA8A23D1A5971010054AEF9 /* ViewController.h */,
@@ -406,12 +415,12 @@
 			files = (
 				FBA8A2831A597FAE0054AEF9 /* BaseResponseCore.m in Sources */,
 				FBA8A2871A597FAE0054AEF9 /* NSDate+Formatted.m in Sources */,
+				FBAC91E21A5A9F210052414C /* DataSource.m in Sources */,
 				FBA8A2841A597FAE0054AEF9 /* DomainManager.m in Sources */,
 				FBA8A28D1A597FAE0054AEF9 /* UIImageView+Additional.m in Sources */,
 				FBA8A2811A597FAE0054AEF9 /* BaseOperation.m in Sources */,
 				FBA8A2881A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m in Sources */,
 				FBA8A23F1A5971010054AEF9 /* ViewController.m in Sources */,
-				FBA8A28B1A597FAE0054AEF9 /* README.md in Sources */,
 				FBA8A23C1A5971010054AEF9 /* AppDelegate.m in Sources */,
 				FBA8A2891A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m in Sources */,
 				FBA8A2391A5971010054AEF9 /* main.m in Sources */,
@@ -424,6 +433,7 @@
 				FBA8A28C1A597FAE0054AEF9 /* TextEditViewController.m in Sources */,
 				FBA8A28A1A597FAE0054AEF9 /* NSString+Additional.m in Sources */,
 				FBA8A2821A597FAE0054AEF9 /* BaseResponse.m in Sources */,
+				FBAC91E51A5AC3850052414C /* PhotoViewer.m in Sources */,
 				FBA8A2801A597FAE0054AEF9 /* BaseModel.m in Sources */,
 				FBA8A2851A597FAE0054AEF9 /* JDJsonDecoder.m in Sources */,
 				FBA8A27F1A597FAE0054AEF9 /* AlertViewTextEditor.m in Sources */,

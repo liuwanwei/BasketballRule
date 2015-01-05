@@ -50,6 +50,9 @@
             }
         };
         
+        self.fiba2014Collections = [NSMutableArray array];
+        self.fiba2014InterpretationCollections = [NSMutableArray array];
+        
         [self initDb];
     }
     
@@ -63,7 +66,10 @@
     
     NSString * table = kCollectionTable;
     NSString * sql;
-    NSMutableArray * objects = [NSMutableArray array];
+    
+    NSMutableArray * fiba2014Tmp = [NSMutableArray array];
+    NSMutableArray * fiba2014IntTmp = [NSMutableArray array];
+
     if (![self.database tableExists:table]) {
         sql = [NSString stringWithFormat:@"create table \"%@\" (\"oid\" text, \"type\" text, \"url\" text, \"createTime\" text, \"comment\" text)", table];
         [self.database executeUpdate:sql];
@@ -78,20 +84,20 @@
             object.url = [rs stringForColumn:@"url"];
             object.createTime = [rs stringForColumn:@"createTime"];
             object.comment = [rs stringForColumn:@"comment"];
-            
-            [objects addObject:object];
+
+            if ([object.type integerValue] == CollectionFiba2014) {
+                [fiba2014Tmp addObject:object];
+            }else if([object.type integerValue] == CollectionFiba2014Interpretation){
+                [fiba2014IntTmp addObject:object];
+            }
+
         }
     }
-    
-    self.fiba2014Collections = [self sortedCollections:objects];
+ 
+    // 对收藏进行排序，按照日期由近到远，返回排序后的数组
+    self.fiba2014Collections = [fiba2014Tmp sortedArrayUsingComparator:self.compareCollection];
+    self.fiba2014InterpretationCollections = [fiba2014IntTmp sortedArrayUsingComparator:self.compareCollection];
 }
-
-// 对收藏进行排序，按照日期由近到远，返回排序后的数组
-- (NSArray *)sortedCollections:(NSArray *)collections{
-    return [collections sortedArrayUsingComparator:self.compareCollection];
-}
-
-
 
 - (NSString *)databasePath {
     static NSString *sDatabasePath = nil;
@@ -100,6 +106,18 @@
         sDatabasePath = [cacheDirectory stringByAppendingPathComponent:@"rules.db"];
     }
     return sDatabasePath;
+}
+
+- (NSArray *)insertCollection:(Collection *)collection toArray:(NSArray *)array{
+    NSMutableArray * mutable = [array mutableCopy];
+    
+    // 查找插入位置
+    NSUInteger insertionIndex = [mutable indexOfObject:collection
+                                         inSortedRange:NSMakeRange(0, mutable.count)
+                                               options:NSBinarySearchingInsertionIndex
+                                       usingComparator:self.compareCollection];
+    [mutable insertObject:collection atIndex:insertionIndex];
+    return mutable;
 }
 
 
@@ -111,32 +129,35 @@
         NSLog(@"%@", [self.database lastErrorMessage]);
     }else{
         // 更新缓存
-        NSMutableArray * mutable = [self.fiba2014Collections mutableCopy];
-        
-        // 查找插入位置
-        NSUInteger insertionIndex = [mutable indexOfObject:collection
-                                             inSortedRange:NSMakeRange(0, mutable.count)
-                                                   options:NSBinarySearchingInsertionIndex
-                                           usingComparator:self.compareCollection];
-        [mutable insertObject:collection atIndex:insertionIndex];
-        self.fiba2014Collections = mutable;
+        if ([collection.type integerValue] == CollectionFiba2014) {
+            self.fiba2014Collections = [self insertCollection:collection toArray:self.fiba2014Collections];
+        }else if([collection.type integerValue] == CollectionFiba2014Interpretation){
+            self.fiba2014InterpretationCollections = [self insertCollection:collection toArray:self.fiba2014InterpretationCollections];
+        }
         
         // 发消息，触发更新收藏界面
-        // TODO: 区分不同的规则状态
-        [[NSNotificationCenter defaultCenter] postNotificationName:kFiba2014CollectionChanged object:self];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kCollectionChanged object:self userInfo:@{@"type":collection.type}];
     }
+}
+
+- (NSArray *)deleteCollection:(Collection *)collection fromArray:(NSArray *)array{
+    NSMutableArray * mutable = [array mutableCopy];
+    [mutable removeObject:collection];
+    return mutable;
 }
 
 - (void)removeCollection:(Collection *)collection{
     // 更新数据库
     NSString * sql = [NSString stringWithFormat:@"delete from \"%@\" where \"url\"=\"%@\" and \"createTime\"=\"%@\"", kCollectionTable, collection.url, collection.createTime];
     if([self executeUpdate:sql]){
-        NSMutableArray * mutable = [self.fiba2014Collections mutableCopy];
-        [mutable removeObject:collection];
-        self.fiba2014Collections = mutable;
+        if ([collection.type integerValue] == CollectionFiba2014) {
+            self.fiba2014Collections = [self deleteCollection:collection fromArray:self.fiba2014Collections];
+        }else if([collection.type integerValue] == CollectionFiba2014Interpretation){
+            self.fiba2014InterpretationCollections = [self deleteCollection:collection fromArray:self.fiba2014InterpretationCollections];
+        }
         
-//        [[NSNotificationCenter defaultCenter] postNotificationName:kQuestionnairesChanged object:self];
-//        NSLog(@"发送消息：%@", kQuestionnairesChanged);
+        //  区分不同的规则分类
+        [[NSNotificationCenter defaultCenter] postNotificationName:kCollectionChanged object:self userInfo:@{@"type":collection.type}];
     }
 
 }
@@ -147,40 +168,6 @@
         return NO;
     }else{
         return YES;
-    }
-}
-
-- (void)showFibaRulesInViewController:(UIViewController *)viewController withPage:(NSUInteger)page{
-    NSArray * photos = [DataManager fiba2014Photos];
-    
-    if (photos.count > 0) {
-        IDMPhotoBrowser * pb = [[IDMPhotoBrowser alloc] initWithPhotos:photos];
-        pb.delegate = self;
-        pb.displayActionButton = YES;
-        pb.displayCounterLabel = YES;
-        pb.actionButtonTitles = @[@"收藏"];
-        [pb setInitialPageIndex:page];
-        
-        [viewController presentViewController:pb animated:YES completion:nil];
-    }
-}
-
-#pragma mark IDMPhotoBrowserDelegate
-- (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser didDismissActionSheetWithButtonIndex:(NSUInteger)buttonIndex photoIndex:(NSUInteger)photoIndex{
-    if (buttonIndex == 0) {
-        [[AlertViewTextEditor defaultInstance] showText:@"帮我记住" title:@"收藏" message:@"收藏后可以随时查看" completed:^(NSString * text){
-            // 收藏
-            IDMPhoto * photo = [photoBrowser photoAtIndex:photoIndex];
-            NSURL * photoUrl = photo.photoURL;
-            NSString * string = photoUrl.relativeString;
-            
-            Collection * collection = [[Collection alloc] init];
-            collection.type = [NSString stringWithFormat:@"%d", (int)CollectionFiba2014];
-            collection.url = string;
-            collection.comment = text;
-            
-            [[CollectionManager defaultInstance] addCollection:collection];
-        }];
     }
 }
 

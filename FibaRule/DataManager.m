@@ -11,30 +11,112 @@
 
 @implementation DataManager
 
-+ (NSArray *)fiba2014Photos{
-    NSString * baseUrl = @"http://cbagm.com/Rules/FIBARulesCHN2014/FIBA%E8%A7%84%E5%88%992014%E4%B8%AD%E6%96%87%E7%89%88_%E9%A1%B5%E9%9D%A2_";
-    int maxIndex = 101;
-    NSMutableArray * photos = [NSMutableArray array];
-    for (int i = 1; i <= maxIndex; i++) {
-        NSString * string = [NSString stringWithFormat:@"%@%03d.jpg", baseUrl, i];
-        NSURL * url = [NSURL URLWithString:string];
-        [photos addObject:[IDMPhoto photoWithURL:url]];
-    }
+#pragma mark - 生成数据的内部接口
 
-    return photos;
++ (NSArray *)urlArrayWithBaseUrl:(NSString *)baseUrl maxIndex:(NSInteger)max{
+    NSMutableArray * mutable = [NSMutableArray array];
+    for (int i = 1; i<= max; i++) {
+        NSString * urlString = nil;
+        if (max/100 > 0) {
+            urlString = [NSString stringWithFormat:@"%@%03d.jpg", baseUrl, i];
+        }else{
+            urlString = [NSString stringWithFormat:@"%@%02d.jpg", baseUrl, i];
+        }
+        
+        [mutable addObject:urlString];
+    }
+    
+    return mutable;
+}
+
++ (NSArray *)photoArrayWithBaseUrl:(NSString *)baseUrl maxIndex:(NSInteger)max{
+    NSMutableArray * mutable = [NSMutableArray array];
+    for (int i = 1; i<= max; i++) {
+        NSString * urlString = nil;
+        if (max/100 > 0) {
+            urlString = [NSString stringWithFormat:@"%@%03d.jpg", baseUrl, i];
+        }else{
+            urlString = [NSString stringWithFormat:@"%@%02d.jpg", baseUrl, i];
+        }
+        
+        NSURL * url = [NSURL URLWithString:urlString];
+        
+        [mutable addObject:[IDMPhoto photoWithURL:url]];
+    }
+    
+    return mutable;
 }
 
 + (NSArray *)fiba2014PhotoUrls{
-    NSString * baseUrl = @"http://cbagm.com/Rules/FIBARulesCHN2014/FIBA%E8%A7%84%E5%88%992014%E4%B8%AD%E6%96%87%E7%89%88_%E9%A1%B5%E9%9D%A2_";
-    int maxIndex = 101;
-    NSMutableArray * urls = [NSMutableArray array];
-    for (int i = 1; i <= maxIndex; i++) {
-        NSString * string = [NSString stringWithFormat:@"%@%03d.jpg", baseUrl, i];
-        [urls addObject:string];
+    static NSArray * sUrls = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (sUrls == nil) {
+            sUrls = [DataManager urlArrayWithBaseUrl:kFiba2014DataSource maxIndex:101];
+        }
+    });
+    
+    return sUrls;
+}
+
++ (NSArray *)fiba2014Photos{
+    static NSArray * sPhotos = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (sPhotos == nil) {
+            sPhotos = [DataManager photoArrayWithBaseUrl:kFiba2014DataSource maxIndex:101];
+        }
+    });
+    
+    return sPhotos;
+}
+
+
++ (NSArray *)fiba2014InterpretationPhotoUrls{
+    static NSArray * sUrls = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (sUrls == nil) {
+            sUrls = [DataManager urlArrayWithBaseUrl:kFiba2014InterpretationDataSource maxIndex:58];
+        }
+    });
+    
+    return sUrls;
+}
+
++ (NSArray *)fiba2014InterpretationPhotos{
+    static NSArray * sPhotos = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (sPhotos == nil) {
+            sPhotos = [DataManager photoArrayWithBaseUrl:kFiba2014InterpretationDataSource maxIndex:58];
+        }
+    });
+    
+    return sPhotos;
+}
+
+
+#pragma mark - 生成数据的外部接口
+
++ (NSArray *)photosForCollectionType:(CollectionType)type{
+    if (type == CollectionFiba2014) {
+        return [DataManager fiba2014Photos];
+    }else if(type == CollectionFiba2014Interpretation){
+        return [DataManager fiba2014InterpretationPhotos];
+    }else{
+        return nil;
     }
-    
-    return urls;
-    
+}
+
++ (NSArray *)photoUrlsForCollectionType:(CollectionType)type{
+    if (type == CollectionFiba2014) {
+        return [DataManager fiba2014PhotoUrls];
+    }else if(type == CollectionFiba2014Interpretation){
+        return [DataManager fiba2014InterpretationPhotoUrls];
+    }else{
+        return nil;
+    }
 }
 
 @end

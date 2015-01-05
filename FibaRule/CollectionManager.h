@@ -8,21 +8,19 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "IDMPhotoBrowser.h"
 
-#define kFiba2014CollectionChanged          @"Fiba2014CollectionChanged"
+#define kCollectionChanged          @"Fiba2014CollectionChanged"
 
 @class Collection;
 
-@interface CollectionManager : NSObject <IDMPhotoBrowserDelegate>
+@interface CollectionManager : NSObject 
 
 @property (nonatomic, strong) NSArray * fiba2014Collections;
+@property (nonatomic, strong) NSArray * fiba2014InterpretationCollections;
 
 + (CollectionManager *)defaultInstance;
 
 - (void)addCollection:(Collection *)collection;
 - (void)removeCollection:(Collection *)collection;
-
-- (void)showFibaRulesInViewController:(UIViewController *)viewController withPage:(NSUInteger)page;
 
 @end

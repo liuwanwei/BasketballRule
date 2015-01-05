@@ -6,22 +6,30 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>32A69879-8910-4A23-805E-430B3F7BC6DC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FibaRule</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>30A35702A2D8F58F4981F14BB6FFD1202E0D296C</key>
 		<string>https://github.com/liuwanwei/BDFoundation.git</string>
+		<key>9BDEEE4872B16407D918CF341217C785155083C7</key>
+		<string>https://github.com/liuwanwei/BasketballRule.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FibaRule.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>30A35702A2D8F58F4981F14BB6FFD1202E0D296C</key>
-		<string>BDFoundation/</string>
+		<string>..Modules/BDFoundation/</string>
+		<key>9BDEEE4872B16407D918CF341217C785155083C7</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/liuwanwei/BDFoundation.git</string>
+	<string>https://github.com/liuwanwei/BasketballRule.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>30A35702A2D8F58F4981F14BB6FFD1202E0D296C</string>
+	<string>9BDEEE4872B16407D918CF341217C785155083C7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -31,6 +39,14 @@
 			<string>30A35702A2D8F58F4981F14BB6FFD1202E0D296C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BDFoundation</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9BDEEE4872B16407D918CF341217C785155083C7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FibaRule</string>
 		</dict>
 	</array>
 </dict>

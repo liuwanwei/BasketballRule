@@ -7,6 +7,7 @@
 //
 
 #import "Collection.h"
+#import "DataManager.h"
 
 @implementation Collection
 
@@ -21,6 +22,16 @@
     }
     
     return self;
+}
+
+- (void)setUrl:(NSString *)url{
+    if ([url hasPrefix:kFiba2014DataSource]) {
+        self.type = [NSString stringWithFormat:@"%d", (int)CollectionFiba2014];
+    }else if([url hasPrefix:kFiba2014InterpretationDataSource]){
+        self.type = [NSString stringWithFormat:@"%d", (int)CollectionFiba2014Interpretation];
+    }
+    
+    _url = url;
 }
 
 @end

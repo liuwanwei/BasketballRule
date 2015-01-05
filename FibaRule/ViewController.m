@@ -7,10 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "Collection.h"
-#import "CollectionManager.h"
 #import "CollectionsViewController.h"
+#import "PhotoViewer.h"
 #import "DataManager.h"
+#import "CollectionManager.h"
 #import "BDFoundation.h"
 
 @interface ViewController ()
@@ -36,18 +36,31 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             // 展示图片浏览器
-            [[CollectionManager defaultInstance] showFibaRulesInViewController:self withPage:0];
+            NSArray * photos = [DataManager photosForCollectionType:CollectionFiba2014];
+            [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
         }else if(indexPath.row == 1){
             // 展示我的收藏
-            [self showFiba2014Collections];
+            [self showCollections:[[CollectionManager defaultInstance] fiba2014Collections]];
+        }
+    }else if(indexPath.section == 1){
+        if (indexPath.row == 0) {
+            NSArray * photos = [DataManager photosForCollectionType:CollectionFiba2014Interpretation];
+            [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
+        }else if(indexPath.row == 1){
+            [self showCollections:[[CollectionManager defaultInstance] fiba2014InterpretationCollections]];
         }
     }
 }
 
 
-- (void)showFiba2014Collections{
+- (void)showCollections:(NSArray *)collections{
     CollectionsViewController * vc = [[CollectionsViewController alloc] initWithStyle:UITableViewStylePlain];
-    vc.collections = [[CollectionManager defaultInstance] fiba2014Collections];
+    vc.collections = collections;
+    if (collections.count > 0) {
+        Collection * collection = collections[0];
+        vc.collectionType = (CollectionType)[collection.type integerValue];
+    }
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 
