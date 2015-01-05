@@ -113,6 +113,7 @@
         // 更新缓存
         NSMutableArray * mutable = [self.fiba2014Collections mutableCopy];
         
+        // 查找插入位置
         NSUInteger insertionIndex = [mutable indexOfObject:collection
                                              inSortedRange:NSMakeRange(0, mutable.count)
                                                    options:NSBinarySearchingInsertionIndex
@@ -120,7 +121,9 @@
         [mutable insertObject:collection atIndex:insertionIndex];
         self.fiba2014Collections = mutable;
         
-        // TODO: 发消息，更新收藏界面
+        // 发消息，触发更新收藏界面
+        // TODO: 区分不同的规则状态
+        [[NSNotificationCenter defaultCenter] postNotificationName:kFiba2014CollectionChanged object:self];
     }
 }
 

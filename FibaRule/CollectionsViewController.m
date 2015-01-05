@@ -19,6 +19,15 @@
     [super viewDidLoad];
     
     self.title = @"我的收藏";
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:kFiba2014CollectionChanged object:nil queue:nil usingBlock:^(NSNotification * note){
+        self.collections = [[CollectionManager defaultInstance] fiba2014Collections];
+        [self.tableView reloadData];
+    }];
+}
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - UITableViewDataSource

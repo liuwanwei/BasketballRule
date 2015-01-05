@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import "IDMPhotoBrowser.h"
 
+#define kFiba2014CollectionChanged          @"Fiba2014CollectionChanged"
+
 @class Collection;
 
 @interface CollectionManager : NSObject <IDMPhotoBrowserDelegate>
