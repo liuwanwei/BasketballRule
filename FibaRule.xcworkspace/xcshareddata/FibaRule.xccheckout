@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>32A69879-8910-4A23-805E-430B3F7BC6DC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>30A35702A2D8F58F4981F14BB6FFD1202E0D296C</key>
+		<string>https://github.com/liuwanwei/BDFoundation.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>30A35702A2D8F58F4981F14BB6FFD1202E0D296C</key>
+		<string>BDFoundation/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/liuwanwei/BDFoundation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>30A35702A2D8F58F4981F14BB6FFD1202E0D296C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>30A35702A2D8F58F4981F14BB6FFD1202E0D296C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BDFoundation</string>
+		</dict>
+	</array>
+</dict>
+</plist>

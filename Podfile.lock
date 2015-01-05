@@ -1,0 +1,62 @@
+PODS:
+  - AFNetworking (2.5.0):
+    - AFNetworking/NSURLConnection (= 2.5.0)
+    - AFNetworking/NSURLSession (= 2.5.0)
+    - AFNetworking/Reachability (= 2.5.0)
+    - AFNetworking/Security (= 2.5.0)
+    - AFNetworking/Serialization (= 2.5.0)
+    - AFNetworking/UIKit (= 2.5.0)
+  - AFNetworking/NSURLConnection (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.0)
+  - AFNetworking/Security (2.5.0)
+  - AFNetworking/Serialization (2.5.0)
+  - AFNetworking/UIKit (2.5.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - DACircularProgress (2.2.0)
+  - FMDB (2.4):
+    - FMDB/standard (= 2.4)
+  - FMDB/common (2.4)
+  - FMDB/standard (2.4):
+    - FMDB/common
+  - IDMPhotoBrowser (1.5.2):
+    - AFNetworking
+    - DACircularProgress
+    - pop
+  - MBProgressHUD (0.9)
+  - pop (1.0.7)
+  - Reachability (3.2)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core (= 3.7.1)
+  - SDWebImage/Core (3.7.1)
+  - YSASIHTTPRequest (2.0.1):
+    - YSASIHTTPRequest/Core (= 2.0.1)
+  - YSASIHTTPRequest/Core (2.0.1):
+    - Reachability
+
+DEPENDENCIES:
+  - FMDB (~> 2.4)
+  - IDMPhotoBrowser (~> 1.5.2)
+  - MBProgressHUD (~> 0.9)
+  - SDWebImage (~> 3.7.1)
+  - YSASIHTTPRequest (~> 2.0.1)
+
+SPEC CHECKSUMS:
+  AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  DACircularProgress: 3b41941891a56dc6aa17971f5322a9a38a6f446e
+  FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
+  IDMPhotoBrowser: 9639f7c57bdf942dc4e214ff9d8108e08ebd3f27
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  pop: 2f14a1ea61339767af9e66741b418c831b3844df
+  Reachability: 1ef8adf5c4e3d362f96515d4278f68dad3c26930
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  YSASIHTTPRequest: 955e68bf54457506cd5e7e47d9eeb42dfd530f0f
+
+COCOAPODS: 0.35.0

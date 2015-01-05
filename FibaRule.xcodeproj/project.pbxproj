@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9712F2DD39D7F423AAAB16A5 /* libPods-FibaRule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CBAE860BB30E116139FE46 /* libPods-FibaRule.a */; };
+		FB2D08781A59958A00A6AF77 /* CollectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2D08771A59958A00A6AF77 /* CollectionManager.m */; };
+		FB2D087B1A5996F500A6AF77 /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2D087A1A5996F500A6AF77 /* Collection.m */; };
+		FB2D087E1A599AB100A6AF77 /* CollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2D087D1A599AB100A6AF77 /* CollectionsViewController.m */; };
+		FB2D08811A599F7000A6AF77 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2D08801A599F7000A6AF77 /* DataManager.m */; };
+		FBA8A2391A5971010054AEF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2381A5971010054AEF9 /* main.m */; };
+		FBA8A23C1A5971010054AEF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A23B1A5971010054AEF9 /* AppDelegate.m */; };
+		FBA8A23F1A5971010054AEF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A23E1A5971010054AEF9 /* ViewController.m */; };
+		FBA8A2421A5971010054AEF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA8A2401A5971010054AEF9 /* Main.storyboard */; };
+		FBA8A2441A5971010054AEF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA8A2431A5971010054AEF9 /* Images.xcassets */; };
+		FBA8A2471A5971010054AEF9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA8A2451A5971010054AEF9 /* LaunchScreen.xib */; };
+		FBA8A2531A5971010054AEF9 /* FibaRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2521A5971010054AEF9 /* FibaRuleTests.m */; };
+		FBA8A27F1A597FAE0054AEF9 /* AlertViewTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A25F1A597FAE0054AEF9 /* AlertViewTextEditor.m */; };
+		FBA8A2801A597FAE0054AEF9 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2611A597FAE0054AEF9 /* BaseModel.m */; };
+		FBA8A2811A597FAE0054AEF9 /* BaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2631A597FAE0054AEF9 /* BaseOperation.m */; };
+		FBA8A2821A597FAE0054AEF9 /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2651A597FAE0054AEF9 /* BaseResponse.m */; };
+		FBA8A2831A597FAE0054AEF9 /* BaseResponseCore.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2671A597FAE0054AEF9 /* BaseResponseCore.m */; };
+		FBA8A2841A597FAE0054AEF9 /* DomainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A26A1A597FAE0054AEF9 /* DomainManager.m */; };
+		FBA8A2851A597FAE0054AEF9 /* JDJsonDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A26C1A597FAE0054AEF9 /* JDJsonDecoder.m */; };
+		FBA8A2861A597FAE0054AEF9 /* MBProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A26F1A597FAE0054AEF9 /* MBProgressManager.m */; };
+		FBA8A2871A597FAE0054AEF9 /* NSDate+Formatted.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2711A597FAE0054AEF9 /* NSDate+Formatted.m */; };
+		FBA8A2881A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2731A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m */; };
+		FBA8A2891A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2751A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m */; };
+		FBA8A28A1A597FAE0054AEF9 /* NSString+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2771A597FAE0054AEF9 /* NSString+Additional.m */; };
+		FBA8A28B1A597FAE0054AEF9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2781A597FAE0054AEF9 /* README.md */; };
+		FBA8A28C1A597FAE0054AEF9 /* TextEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A27A1A597FAE0054AEF9 /* TextEditViewController.m */; };
+		FBA8A28D1A597FAE0054AEF9 /* UIImageView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A27C1A597FAE0054AEF9 /* UIImageView+Additional.m */; };
+		FBA8A28E1A597FAE0054AEF9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A27E1A597FAE0054AEF9 /* Utils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBA8A24D1A5971010054AEF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA8A22B1A5971000054AEF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA8A2321A5971010054AEF9;
+			remoteInfo = FibaRule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31CBAE860BB30E116139FE46 /* libPods-FibaRule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FibaRule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D197A959A8C4AE0D9363E89E /* Pods-FibaRule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FibaRule.release.xcconfig"; path = "Pods/Target Support Files/Pods-FibaRule/Pods-FibaRule.release.xcconfig"; sourceTree = "<group>"; };
+		E7100128A3C4D571DFB37207 /* Pods-FibaRule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FibaRule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FibaRule/Pods-FibaRule.debug.xcconfig"; sourceTree = "<group>"; };
+		FB2D08761A59958A00A6AF77 /* CollectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionManager.h; path = FibaRule/CollectionManager.h; sourceTree = "<group>"; };
+		FB2D08771A59958A00A6AF77 /* CollectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionManager.m; path = FibaRule/CollectionManager.m; sourceTree = "<group>"; };
+		FB2D08791A5996F500A6AF77 /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Collection.h; path = FibaRule/Collection.h; sourceTree = "<group>"; };
+		FB2D087A1A5996F500A6AF77 /* Collection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Collection.m; path = FibaRule/Collection.m; sourceTree = "<group>"; };
+		FB2D087C1A599AB100A6AF77 /* CollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewController.h; sourceTree = "<group>"; };
+		FB2D087D1A599AB100A6AF77 /* CollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewController.m; sourceTree = "<group>"; };
+		FB2D087F1A599F7000A6AF77 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = FibaRule/DataManager.h; sourceTree = "<group>"; };
+		FB2D08801A599F7000A6AF77 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = FibaRule/DataManager.m; sourceTree = "<group>"; };
+		FBA8A2331A5971010054AEF9 /* FibaRule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FibaRule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA8A2371A5971010054AEF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA8A2381A5971010054AEF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBA8A23A1A5971010054AEF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBA8A23B1A5971010054AEF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBA8A23D1A5971010054AEF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBA8A23E1A5971010054AEF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBA8A2411A5971010054AEF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBA8A2431A5971010054AEF9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FBA8A2461A5971010054AEF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FBA8A24C1A5971010054AEF9 /* FibaRuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FibaRuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA8A2511A5971010054AEF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA8A2521A5971010054AEF9 /* FibaRuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibaRuleTests.m; sourceTree = "<group>"; };
+		FBA8A25E1A597FAE0054AEF9 /* AlertViewTextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewTextEditor.h; sourceTree = "<group>"; };
+		FBA8A25F1A597FAE0054AEF9 /* AlertViewTextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewTextEditor.m; sourceTree = "<group>"; };
+		FBA8A2601A597FAE0054AEF9 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		FBA8A2611A597FAE0054AEF9 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		FBA8A2621A597FAE0054AEF9 /* BaseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseOperation.h; sourceTree = "<group>"; };
+		FBA8A2631A597FAE0054AEF9 /* BaseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseOperation.m; sourceTree = "<group>"; };
+		FBA8A2641A597FAE0054AEF9 /* BaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
+		FBA8A2651A597FAE0054AEF9 /* BaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
+		FBA8A2661A597FAE0054AEF9 /* BaseResponseCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponseCore.h; sourceTree = "<group>"; };
+		FBA8A2671A597FAE0054AEF9 /* BaseResponseCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponseCore.m; sourceTree = "<group>"; };
+		FBA8A2681A597FAE0054AEF9 /* BDFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFoundation.h; sourceTree = "<group>"; };
+		FBA8A2691A597FAE0054AEF9 /* DomainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomainManager.h; sourceTree = "<group>"; };
+		FBA8A26A1A597FAE0054AEF9 /* DomainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomainManager.m; sourceTree = "<group>"; };
+		FBA8A26B1A597FAE0054AEF9 /* JDJsonDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDJsonDecoder.h; sourceTree = "<group>"; };
+		FBA8A26C1A597FAE0054AEF9 /* JDJsonDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDJsonDecoder.m; sourceTree = "<group>"; };
+		FBA8A26D1A597FAE0054AEF9 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		FBA8A26E1A597FAE0054AEF9 /* MBProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressManager.h; sourceTree = "<group>"; };
+		FBA8A26F1A597FAE0054AEF9 /* MBProgressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressManager.m; sourceTree = "<group>"; };
+		FBA8A2701A597FAE0054AEF9 /* NSDate+Formatted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatted.h"; sourceTree = "<group>"; };
+		FBA8A2711A597FAE0054AEF9 /* NSDate+Formatted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatted.m"; sourceTree = "<group>"; };
+		FBA8A2721A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+QueryStringBuilder.h"; sourceTree = "<group>"; };
+		FBA8A2731A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+QueryStringBuilder.m"; sourceTree = "<group>"; };
+		FBA8A2741A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SafeSet.h"; sourceTree = "<group>"; };
+		FBA8A2751A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SafeSet.m"; sourceTree = "<group>"; };
+		FBA8A2761A597FAE0054AEF9 /* NSString+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additional.h"; sourceTree = "<group>"; };
+		FBA8A2771A597FAE0054AEF9 /* NSString+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additional.m"; sourceTree = "<group>"; };
+		FBA8A2781A597FAE0054AEF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FBA8A2791A597FAE0054AEF9 /* TextEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEditViewController.h; sourceTree = "<group>"; };
+		FBA8A27A1A597FAE0054AEF9 /* TextEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEditViewController.m; sourceTree = "<group>"; };
+		FBA8A27B1A597FAE0054AEF9 /* UIImageView+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Additional.h"; sourceTree = "<group>"; };
+		FBA8A27C1A597FAE0054AEF9 /* UIImageView+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Additional.m"; sourceTree = "<group>"; };
+		FBA8A27D1A597FAE0054AEF9 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		FBA8A27E1A597FAE0054AEF9 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBA8A2301A5971010054AEF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9712F2DD39D7F423AAAB16A5 /* libPods-FibaRule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA8A2491A5971010054AEF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4605C4C602BD52C083B14DF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31CBAE860BB30E116139FE46 /* libPods-FibaRule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		795DAFC8A9F5E15C7160314D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7100128A3C4D571DFB37207 /* Pods-FibaRule.debug.xcconfig */,
+				D197A959A8C4AE0D9363E89E /* Pods-FibaRule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB2D08821A599FD100A6AF77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB2D087F1A599F7000A6AF77 /* DataManager.h */,
+				FB2D08801A599F7000A6AF77 /* DataManager.m */,
+				FB2D08791A5996F500A6AF77 /* Collection.h */,
+				FB2D087A1A5996F500A6AF77 /* Collection.m */,
+				FB2D08761A59958A00A6AF77 /* CollectionManager.h */,
+				FB2D08771A59958A00A6AF77 /* CollectionManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FBA8A22A1A5971000054AEF9 = {
+			isa = PBXGroup;
+			children = (
+				FBA8A25C1A597FAD0054AEF9 /* Modules */,
+				FB2D08821A599FD100A6AF77 /* Model */,
+				FBA8A2351A5971010054AEF9 /* FibaRule */,
+				FBA8A24F1A5971010054AEF9 /* FibaRuleTests */,
+				FBA8A2341A5971010054AEF9 /* Products */,
+				795DAFC8A9F5E15C7160314D /* Pods */,
+				4605C4C602BD52C083B14DF3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FBA8A2341A5971010054AEF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8A2331A5971010054AEF9 /* FibaRule.app */,
+				FBA8A24C1A5971010054AEF9 /* FibaRuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBA8A2351A5971010054AEF9 /* FibaRule */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8A23A1A5971010054AEF9 /* AppDelegate.h */,
+				FBA8A23B1A5971010054AEF9 /* AppDelegate.m */,
+				FBA8A23D1A5971010054AEF9 /* ViewController.h */,
+				FBA8A23E1A5971010054AEF9 /* ViewController.m */,
+				FB2D087C1A599AB100A6AF77 /* CollectionsViewController.h */,
+				FB2D087D1A599AB100A6AF77 /* CollectionsViewController.m */,
+				FBA8A2401A5971010054AEF9 /* Main.storyboard */,
+				FBA8A2431A5971010054AEF9 /* Images.xcassets */,
+				FBA8A2451A5971010054AEF9 /* LaunchScreen.xib */,
+				FBA8A2361A5971010054AEF9 /* Supporting Files */,
+			);
+			path = FibaRule;
+			sourceTree = "<group>";
+		};
+		FBA8A2361A5971010054AEF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8A2371A5971010054AEF9 /* Info.plist */,
+				FBA8A2381A5971010054AEF9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBA8A24F1A5971010054AEF9 /* FibaRuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8A2521A5971010054AEF9 /* FibaRuleTests.m */,
+				FBA8A2501A5971010054AEF9 /* Supporting Files */,
+			);
+			path = FibaRuleTests;
+			sourceTree = "<group>";
+		};
+		FBA8A2501A5971010054AEF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8A2511A5971010054AEF9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBA8A25C1A597FAD0054AEF9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8A25D1A597FAD0054AEF9 /* BDFoundation */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FBA8A25D1A597FAD0054AEF9 /* BDFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8A25E1A597FAE0054AEF9 /* AlertViewTextEditor.h */,
+				FBA8A25F1A597FAE0054AEF9 /* AlertViewTextEditor.m */,
+				FBA8A2601A597FAE0054AEF9 /* BaseModel.h */,
+				FBA8A2611A597FAE0054AEF9 /* BaseModel.m */,
+				FBA8A2621A597FAE0054AEF9 /* BaseOperation.h */,
+				FBA8A2631A597FAE0054AEF9 /* BaseOperation.m */,
+				FBA8A2641A597FAE0054AEF9 /* BaseResponse.h */,
+				FBA8A2651A597FAE0054AEF9 /* BaseResponse.m */,
+				FBA8A2661A597FAE0054AEF9 /* BaseResponseCore.h */,
+				FBA8A2671A597FAE0054AEF9 /* BaseResponseCore.m */,
+				FBA8A2681A597FAE0054AEF9 /* BDFoundation.h */,
+				FBA8A2691A597FAE0054AEF9 /* DomainManager.h */,
+				FBA8A26A1A597FAE0054AEF9 /* DomainManager.m */,
+				FBA8A26B1A597FAE0054AEF9 /* JDJsonDecoder.h */,
+				FBA8A26C1A597FAE0054AEF9 /* JDJsonDecoder.m */,
+				FBA8A26D1A597FAE0054AEF9 /* Macro.h */,
+				FBA8A26E1A597FAE0054AEF9 /* MBProgressManager.h */,
+				FBA8A26F1A597FAE0054AEF9 /* MBProgressManager.m */,
+				FBA8A2701A597FAE0054AEF9 /* NSDate+Formatted.h */,
+				FBA8A2711A597FAE0054AEF9 /* NSDate+Formatted.m */,
+				FBA8A2721A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.h */,
+				FBA8A2731A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m */,
+				FBA8A2741A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.h */,
+				FBA8A2751A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m */,
+				FBA8A2761A597FAE0054AEF9 /* NSString+Additional.h */,
+				FBA8A2771A597FAE0054AEF9 /* NSString+Additional.m */,
+				FBA8A2781A597FAE0054AEF9 /* README.md */,
+				FBA8A2791A597FAE0054AEF9 /* TextEditViewController.h */,
+				FBA8A27A1A597FAE0054AEF9 /* TextEditViewController.m */,
+				FBA8A27B1A597FAE0054AEF9 /* UIImageView+Additional.h */,
+				FBA8A27C1A597FAE0054AEF9 /* UIImageView+Additional.m */,
+				FBA8A27D1A597FAE0054AEF9 /* Utils.h */,
+				FBA8A27E1A597FAE0054AEF9 /* Utils.m */,
+			);
+			path = BDFoundation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBA8A2321A5971010054AEF9 /* FibaRule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA8A2561A5971010054AEF9 /* Build configuration list for PBXNativeTarget "FibaRule" */;
+			buildPhases = (
+				413A25EF37012D430D0DD926 /* Check Pods Manifest.lock */,
+				FBA8A22F1A5971010054AEF9 /* Sources */,
+				FBA8A2301A5971010054AEF9 /* Frameworks */,
+				FBA8A2311A5971010054AEF9 /* Resources */,
+				858875F7FAD22DBE3C5DF613 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FibaRule;
+			productName = FibaRule;
+			productReference = FBA8A2331A5971010054AEF9 /* FibaRule.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBA8A24B1A5971010054AEF9 /* FibaRuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA8A2591A5971010054AEF9 /* Build configuration list for PBXNativeTarget "FibaRuleTests" */;
+			buildPhases = (
+				FBA8A2481A5971010054AEF9 /* Sources */,
+				FBA8A2491A5971010054AEF9 /* Frameworks */,
+				FBA8A24A1A5971010054AEF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA8A24E1A5971010054AEF9 /* PBXTargetDependency */,
+			);
+			name = FibaRuleTests;
+			productName = FibaRuleTests;
+			productReference = FBA8A24C1A5971010054AEF9 /* FibaRuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBA8A22B1A5971000054AEF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = buddysoft;
+				TargetAttributes = {
+					FBA8A2321A5971010054AEF9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					FBA8A24B1A5971010054AEF9 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FBA8A2321A5971010054AEF9;
+					};
+				};
+			};
+			buildConfigurationList = FBA8A22E1A5971000054AEF9 /* Build configuration list for PBXProject "FibaRule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBA8A22A1A5971000054AEF9;
+			productRefGroup = FBA8A2341A5971010054AEF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBA8A2321A5971010054AEF9 /* FibaRule */,
+				FBA8A24B1A5971010054AEF9 /* FibaRuleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBA8A2311A5971010054AEF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA8A2421A5971010054AEF9 /* Main.storyboard in Resources */,
+				FBA8A2471A5971010054AEF9 /* LaunchScreen.xib in Resources */,
+				FBA8A2441A5971010054AEF9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA8A24A1A5971010054AEF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		413A25EF37012D430D0DD926 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		858875F7FAD22DBE3C5DF613 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FibaRule/Pods-FibaRule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBA8A22F1A5971010054AEF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA8A2831A597FAE0054AEF9 /* BaseResponseCore.m in Sources */,
+				FBA8A2871A597FAE0054AEF9 /* NSDate+Formatted.m in Sources */,
+				FBA8A2841A597FAE0054AEF9 /* DomainManager.m in Sources */,
+				FBA8A28D1A597FAE0054AEF9 /* UIImageView+Additional.m in Sources */,
+				FBA8A2811A597FAE0054AEF9 /* BaseOperation.m in Sources */,
+				FBA8A2881A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m in Sources */,
+				FBA8A23F1A5971010054AEF9 /* ViewController.m in Sources */,
+				FBA8A28B1A597FAE0054AEF9 /* README.md in Sources */,
+				FBA8A23C1A5971010054AEF9 /* AppDelegate.m in Sources */,
+				FBA8A2891A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m in Sources */,
+				FBA8A2391A5971010054AEF9 /* main.m in Sources */,
+				FB2D08811A599F7000A6AF77 /* DataManager.m in Sources */,
+				FB2D087B1A5996F500A6AF77 /* Collection.m in Sources */,
+				FB2D087E1A599AB100A6AF77 /* CollectionsViewController.m in Sources */,
+				FBA8A28E1A597FAE0054AEF9 /* Utils.m in Sources */,
+				FBA8A2861A597FAE0054AEF9 /* MBProgressManager.m in Sources */,
+				FB2D08781A59958A00A6AF77 /* CollectionManager.m in Sources */,
+				FBA8A28C1A597FAE0054AEF9 /* TextEditViewController.m in Sources */,
+				FBA8A28A1A597FAE0054AEF9 /* NSString+Additional.m in Sources */,
+				FBA8A2821A597FAE0054AEF9 /* BaseResponse.m in Sources */,
+				FBA8A2801A597FAE0054AEF9 /* BaseModel.m in Sources */,
+				FBA8A2851A597FAE0054AEF9 /* JDJsonDecoder.m in Sources */,
+				FBA8A27F1A597FAE0054AEF9 /* AlertViewTextEditor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA8A2481A5971010054AEF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA8A2531A5971010054AEF9 /* FibaRuleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBA8A24E1A5971010054AEF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA8A2321A5971010054AEF9 /* FibaRule */;
+			targetProxy = FBA8A24D1A5971010054AEF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBA8A2401A5971010054AEF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA8A2411A5971010054AEF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBA8A2451A5971010054AEF9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA8A2461A5971010054AEF9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBA8A2541A5971010054AEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBA8A2551A5971010054AEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBA8A2571A5971010054AEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7100128A3C4D571DFB37207 /* Pods-FibaRule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FibaRule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBA8A2581A5971010054AEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D197A959A8C4AE0D9363E89E /* Pods-FibaRule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FibaRule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FBA8A25A1A5971010054AEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FibaRuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FibaRule.app/FibaRule";
+			};
+			name = Debug;
+		};
+		FBA8A25B1A5971010054AEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FibaRuleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FibaRule.app/FibaRule";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBA8A22E1A5971000054AEF9 /* Build configuration list for PBXProject "FibaRule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA8A2541A5971010054AEF9 /* Debug */,
+				FBA8A2551A5971010054AEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA8A2561A5971010054AEF9 /* Build configuration list for PBXNativeTarget "FibaRule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA8A2571A5971010054AEF9 /* Debug */,
+				FBA8A2581A5971010054AEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA8A2591A5971010054AEF9 /* Build configuration list for PBXNativeTarget "FibaRuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA8A25A1A5971010054AEF9 /* Debug */,
+				FBA8A25B1A5971010054AEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBA8A22B1A5971000054AEF9 /* Project object */;
+}
