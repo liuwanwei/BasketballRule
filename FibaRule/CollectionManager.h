@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) NSArray * fiba2014Collections;
 @property (nonatomic, strong) NSArray * fiba2014InterpretationCollections;
+@property (nonatomic, strong) NSArray * nbaCollections;
 
 + (CollectionManager *)defaultInstance;
 

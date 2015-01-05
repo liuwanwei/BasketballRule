@@ -13,9 +13,13 @@
 
 #define kFiba2014InterpretationDataSource @"http://cbagm.com/Rules/FIBARulesInterpretationsCHN2014/FIBA2014%E8%A7%84%E5%88%99%E8%A7%A3%E9%87%8A%E4%B8%AD%E6%96%87%E7%89%88_%E9%A1%B5%E9%9D%A2_"
 
+#define kNbaDataSource @"http://cbagm.com/Rules/NBARulesCHN/NBA%E8%A7%84%E5%88%99%E4%B8%AD%E6%96%87%E7%89%88_%E9%A1%B5%E9%9D%A2_"
+
 typedef enum {
+    DataNone = 0,
     DataFiba2014 = 1,
     DataFiba2014Interpretation,
+    DataNba,
 }DataType;
 
 @interface DataSource : NSObject
@@ -27,8 +31,8 @@ typedef enum {
 
 - (id)initWithType:(DataType)type andMaxPage:(NSUInteger)max;
 
-+ (void)initDataSource;
 + (NSArray *)photosForCollectionType:(DataType)type;
 + (NSArray *)photoUrlsForCollectionType:(DataType)type;
++ (NSString *)dataTypeForUrl:(NSString *)url;
 
 @end

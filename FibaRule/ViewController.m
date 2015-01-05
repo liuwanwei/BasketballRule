@@ -49,6 +49,13 @@
         }else if(indexPath.row == 1){
             [self showCollections:[[CollectionManager defaultInstance] fiba2014InterpretationCollections]];
         }
+    }else if(indexPath.section == 2){
+        if (indexPath.row == 0) {
+            NSArray * photos = [DataSource photosForCollectionType:DataNba];
+            [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
+        }else if(indexPath.row == 1){
+            [self showCollections:[[CollectionManager defaultInstance] nbaCollections]];
+        }
     }
 }
 

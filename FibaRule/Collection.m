@@ -24,14 +24,14 @@
     return self;
 }
 
-- (void)setUrl:(NSString *)url{
-    if ([url hasPrefix:kFiba2014DataSource]) {
-        self.type = [NSString stringWithFormat:@"%d", (int)DataFiba2014];
-    }else if([url hasPrefix:kFiba2014InterpretationDataSource]){
-        self.type = [NSString stringWithFormat:@"%d", (int)DataFiba2014Interpretation];
-    }
-    
-    _url = url;
-}
+//- (void)setUrl:(NSString *)url{
+//    if ([url hasPrefix:kFiba2014DataSource]) {
+//        self.type = [NSString stringWithFormat:@"%d", (int)DataFiba2014];
+//    }else if([url hasPrefix:kFiba2014InterpretationDataSource]){
+//        self.type = [NSString stringWithFormat:@"%d", (int)DataFiba2014Interpretation];
+//    }
+//    
+//    _url = url;
+//}
 
 @end

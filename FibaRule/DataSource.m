@@ -59,6 +59,9 @@
             case DataFiba2014Interpretation:
                 urlPrefix = kFiba2014InterpretationDataSource;
                 break;
+            case DataNba:
+                urlPrefix = kNbaDataSource;
+                break;
             default:
                 break;
         }
@@ -79,12 +82,13 @@ static NSArray * sDataSources = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         if (sDataSources == 0) {
-            DataSource * ds1, *ds2;
+            DataSource * ds1, *ds2, *ds3;
             
             ds1 = [[DataSource alloc] initWithType:DataFiba2014 andMaxPage:101];
             ds2 = [[DataSource alloc] initWithType:DataFiba2014Interpretation andMaxPage:58];
+            ds3 = [[DataSource alloc] initWithType:DataNba andMaxPage:55];
 
-            sDataSources = @[ds1, ds2];
+            sDataSources = @[ds1, ds2, ds3];
         }
     });
 }
@@ -111,6 +115,16 @@ static NSArray * sDataSources = nil;
     }
     
     return nil;
+}
+
++ (NSString *)dataTypeForUrl:(NSString *)url{
+    for (DataSource * ds in sDataSources) {
+        if ([url hasPrefix:ds.urlPrefix]) {
+            return [NSString stringWithFormat:@"%d", (int)ds.type];
+        }
+    }
+    
+    return @"";
 }
 
 @end

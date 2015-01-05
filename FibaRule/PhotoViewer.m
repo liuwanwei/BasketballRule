@@ -10,6 +10,7 @@
 #import "Collection.h"
 #import "CollectionManager.h"
 #import "BDFoundation.h"
+#import "DataSource.h"
 
 @implementation PhotoViewer
 
@@ -47,7 +48,8 @@
             
             Collection * collection = [[Collection alloc] init];
             collection.url = photoUrl.relativeString;
-            collection.comment = text;            
+            collection.comment = text;
+            collection.type = [DataSource dataTypeForUrl:collection.url];
             
             [[CollectionManager defaultInstance] addCollection:collection];
         }];

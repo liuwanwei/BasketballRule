@@ -69,6 +69,7 @@
     
     NSMutableArray * fiba2014Tmp = [NSMutableArray array];
     NSMutableArray * fiba2014IntTmp = [NSMutableArray array];
+    NSMutableArray * nbaTmp = [NSMutableArray array];
 
     if (![self.database tableExists:table]) {
         sql = [NSString stringWithFormat:@"create table \"%@\" (\"oid\" text, \"type\" text, \"url\" text, \"createTime\" text, \"comment\" text)", table];
@@ -89,6 +90,8 @@
                 [fiba2014Tmp addObject:object];
             }else if([object.type integerValue] == DataFiba2014Interpretation){
                 [fiba2014IntTmp addObject:object];
+            }else if([object.type integerValue] == DataNba){
+                [nbaTmp addObject:object];
             }
 
         }
@@ -97,6 +100,7 @@
     // 对收藏进行排序，按照日期由近到远，返回排序后的数组
     self.fiba2014Collections = [fiba2014Tmp sortedArrayUsingComparator:self.compareCollection];
     self.fiba2014InterpretationCollections = [fiba2014IntTmp sortedArrayUsingComparator:self.compareCollection];
+    self.nbaCollections = [nbaTmp sortedArrayUsingComparator:self.compareCollection];
 }
 
 - (NSString *)databasePath {
@@ -133,6 +137,8 @@
             self.fiba2014Collections = [self insertCollection:collection toArray:self.fiba2014Collections];
         }else if([collection.type integerValue] == DataFiba2014Interpretation){
             self.fiba2014InterpretationCollections = [self insertCollection:collection toArray:self.fiba2014InterpretationCollections];
+        }else if([collection.type integerValue] == DataNba){
+            self.nbaCollections = [self insertCollection:collection toArray:self.nbaCollections];
         }
         
         // 发消息，触发更新收藏界面
@@ -154,6 +160,8 @@
             self.fiba2014Collections = [self deleteCollection:collection fromArray:self.fiba2014Collections];
         }else if([collection.type integerValue] == DataFiba2014Interpretation){
             self.fiba2014InterpretationCollections = [self deleteCollection:collection fromArray:self.fiba2014InterpretationCollections];
+        }else if([collection.type integerValue] == DataNba){
+            self.nbaCollections = [self deleteCollection:collection fromArray:self.nbaCollections];
         }
         
         //  区分不同的规则分类

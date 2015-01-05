@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FibaRule/ViewController.m"
-            timestampString = "442159196.126205"
+            timestampString = "442166080.482706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "-showCollections:"
             landmarkType = "5">
          </BreakpointContent>
@@ -150,15 +150,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FibaRule/PhotoViewer.m"
-            timestampString = "442159362.09329"
+            timestampString = "442166080.482706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "-photoBrowser:didDismissActionSheetWithButtonIndex:photoIndex:"
             landmarkType = "5">
          </BreakpointContent>
