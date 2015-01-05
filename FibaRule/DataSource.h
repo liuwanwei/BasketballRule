@@ -13,16 +13,22 @@
 
 #define kFiba2014InterpretationDataSource @"http://cbagm.com/Rules/FIBARulesInterpretationsCHN2014/FIBA2014%E8%A7%84%E5%88%99%E8%A7%A3%E9%87%8A%E4%B8%AD%E6%96%87%E7%89%88_%E9%A1%B5%E9%9D%A2_"
 
+typedef enum {
+    DataFiba2014 = 1,
+    DataFiba2014Interpretation,
+}DataType;
 
-@interface DataManager : NSObject
+@interface DataSource : NSObject
 
-+ (NSArray *)photosForCollectionType:(CollectionType)type;
-+ (NSArray *)photoUrlsForCollectionType:(CollectionType)type;
+@property (nonatomic) DataType type;
+@property (nonatomic, copy) NSString * urlPrefix;
+@property (nonatomic, strong) NSArray * photos;
+@property (nonatomic, strong) NSArray * photoUrls;
 
-//+ (NSArray *)fiba2014Photos;
-//+ (NSArray *)fiba2014PhotoUrls;
-//
-//+ (NSArray *)fiba2014InterpretationPhotos;
-//+ (NSArray *)fiba2014InterpretationPhotoUrls;
+- (id)initWithType:(DataType)type andMaxPage:(NSUInteger)max;
+
++ (void)initDataSource;
++ (NSArray *)photosForCollectionType:(DataType)type;
++ (NSArray *)photoUrlsForCollectionType:(DataType)type;
 
 @end

@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "Collection.h"
+#import "DataSource.h"
 
 @interface CollectionsViewController : UITableViewController
 
 @property (nonatomic, weak) NSArray * collections;
-@property (nonatomic) CollectionType collectionType;
+@property (nonatomic) DataType collectionType;
 
 @end

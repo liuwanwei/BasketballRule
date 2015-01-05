@@ -10,7 +10,7 @@
 #import <FMDatabase.h>
 #import <FMDatabaseAdditions.h>
 #import "Collection.h"
-#import "DataManager.h"
+#import "DataSource.h"
 #import "BDFoundation.h"
 
 #define kCollectionTable        @"CollectionTable"
@@ -85,9 +85,9 @@
             object.createTime = [rs stringForColumn:@"createTime"];
             object.comment = [rs stringForColumn:@"comment"];
 
-            if ([object.type integerValue] == CollectionFiba2014) {
+            if ([object.type integerValue] == DataFiba2014) {
                 [fiba2014Tmp addObject:object];
-            }else if([object.type integerValue] == CollectionFiba2014Interpretation){
+            }else if([object.type integerValue] == DataFiba2014Interpretation){
                 [fiba2014IntTmp addObject:object];
             }
 
@@ -129,9 +129,9 @@
         NSLog(@"%@", [self.database lastErrorMessage]);
     }else{
         // 更新缓存
-        if ([collection.type integerValue] == CollectionFiba2014) {
+        if ([collection.type integerValue] == DataFiba2014) {
             self.fiba2014Collections = [self insertCollection:collection toArray:self.fiba2014Collections];
-        }else if([collection.type integerValue] == CollectionFiba2014Interpretation){
+        }else if([collection.type integerValue] == DataFiba2014Interpretation){
             self.fiba2014InterpretationCollections = [self insertCollection:collection toArray:self.fiba2014InterpretationCollections];
         }
         
@@ -150,9 +150,9 @@
     // 更新数据库
     NSString * sql = [NSString stringWithFormat:@"delete from \"%@\" where \"url\"=\"%@\" and \"createTime\"=\"%@\"", kCollectionTable, collection.url, collection.createTime];
     if([self executeUpdate:sql]){
-        if ([collection.type integerValue] == CollectionFiba2014) {
+        if ([collection.type integerValue] == DataFiba2014) {
             self.fiba2014Collections = [self deleteCollection:collection fromArray:self.fiba2014Collections];
-        }else if([collection.type integerValue] == CollectionFiba2014Interpretation){
+        }else if([collection.type integerValue] == DataFiba2014Interpretation){
             self.fiba2014InterpretationCollections = [self deleteCollection:collection fromArray:self.fiba2014InterpretationCollections];
         }
         

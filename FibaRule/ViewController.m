@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "CollectionsViewController.h"
 #import "PhotoViewer.h"
-#import "DataManager.h"
+#import "DataSource.h"
 #import "CollectionManager.h"
 #import "BDFoundation.h"
 
@@ -36,7 +36,7 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             // 展示图片浏览器
-            NSArray * photos = [DataManager photosForCollectionType:CollectionFiba2014];
+            NSArray * photos = [DataSource photosForCollectionType:DataFiba2014];
             [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
         }else if(indexPath.row == 1){
             // 展示我的收藏
@@ -44,7 +44,7 @@
         }
     }else if(indexPath.section == 1){
         if (indexPath.row == 0) {
-            NSArray * photos = [DataManager photosForCollectionType:CollectionFiba2014Interpretation];
+            NSArray * photos = [DataSource photosForCollectionType:DataFiba2014Interpretation];
             [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
         }else if(indexPath.row == 1){
             [self showCollections:[[CollectionManager defaultInstance] fiba2014InterpretationCollections]];
@@ -58,7 +58,7 @@
     vc.collections = collections;
     if (collections.count > 0) {
         Collection * collection = collections[0];
-        vc.collectionType = (CollectionType)[collection.type integerValue];
+        vc.collectionType = (DataType)[collection.type integerValue];
     }
     
     [self.navigationController pushViewController:vc animated:YES];

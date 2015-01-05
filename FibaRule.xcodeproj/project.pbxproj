@@ -11,7 +11,7 @@
 		FB2D08781A59958A00A6AF77 /* CollectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2D08771A59958A00A6AF77 /* CollectionManager.m */; };
 		FB2D087B1A5996F500A6AF77 /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2D087A1A5996F500A6AF77 /* Collection.m */; };
 		FB2D087E1A599AB100A6AF77 /* CollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2D087D1A599AB100A6AF77 /* CollectionsViewController.m */; };
-		FB2D08811A599F7000A6AF77 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2D08801A599F7000A6AF77 /* DataManager.m */; };
+		FB2D08811A599F7000A6AF77 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2D08801A599F7000A6AF77 /* DataSource.m */; };
 		FBA8A2391A5971010054AEF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2381A5971010054AEF9 /* main.m */; };
 		FBA8A23C1A5971010054AEF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A23B1A5971010054AEF9 /* AppDelegate.m */; };
 		FBA8A23F1A5971010054AEF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A23E1A5971010054AEF9 /* ViewController.m */; };
@@ -57,8 +57,8 @@
 		FB2D087A1A5996F500A6AF77 /* Collection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Collection.m; path = FibaRule/Collection.m; sourceTree = "<group>"; };
 		FB2D087C1A599AB100A6AF77 /* CollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewController.h; sourceTree = "<group>"; };
 		FB2D087D1A599AB100A6AF77 /* CollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewController.m; sourceTree = "<group>"; };
-		FB2D087F1A599F7000A6AF77 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = FibaRule/DataManager.h; sourceTree = "<group>"; };
-		FB2D08801A599F7000A6AF77 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = FibaRule/DataManager.m; sourceTree = "<group>"; };
+		FB2D087F1A599F7000A6AF77 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataSource.h; path = FibaRule/DataSource.h; sourceTree = "<group>"; };
+		FB2D08801A599F7000A6AF77 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataSource.m; path = FibaRule/DataSource.m; sourceTree = "<group>"; };
 		FBA8A2331A5971010054AEF9 /* FibaRule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FibaRule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA8A2371A5971010054AEF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBA8A2381A5971010054AEF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 		FB2D08821A599FD100A6AF77 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FB2D087F1A599F7000A6AF77 /* DataManager.h */,
-				FB2D08801A599F7000A6AF77 /* DataManager.m */,
+				FB2D087F1A599F7000A6AF77 /* DataSource.h */,
+				FB2D08801A599F7000A6AF77 /* DataSource.m */,
 				FB2D08791A5996F500A6AF77 /* Collection.h */,
 				FB2D087A1A5996F500A6AF77 /* Collection.m */,
 				FB2D08761A59958A00A6AF77 /* CollectionManager.h */,
@@ -418,7 +418,7 @@
 				FBA8A23C1A5971010054AEF9 /* AppDelegate.m in Sources */,
 				FBA8A2891A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m in Sources */,
 				FBA8A2391A5971010054AEF9 /* main.m in Sources */,
-				FB2D08811A599F7000A6AF77 /* DataManager.m in Sources */,
+				FB2D08811A599F7000A6AF77 /* DataSource.m in Sources */,
 				FB2D087B1A5996F500A6AF77 /* Collection.m in Sources */,
 				FB2D087E1A599AB100A6AF77 /* CollectionsViewController.m in Sources */,
 				FBA8A28E1A597FAE0054AEF9 /* Utils.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "CollectionsViewController.h"
 #import "Collection.h"
-#import "DataManager.h"
+#import "DataSource.h"
 #import "CollectionManager.h"
 #import "PhotoViewer.h"
 
@@ -60,8 +60,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     Collection * collection = self.collections[indexPath.row];
-    NSArray * urls = [DataManager photoUrlsForCollectionType:self.collectionType];
-    NSArray * photos = [DataManager photosForCollectionType:self.collectionType];
+    NSArray * urls = [DataSource photoUrlsForCollectionType:self.collectionType];
+    NSArray * photos = [DataSource photosForCollectionType:self.collectionType];
     NSUInteger index = [urls indexOfObject:collection.url];
     if (index != NSNotFound) {
         [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:index];

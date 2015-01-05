@@ -8,12 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum {
-    CollectionFiba2014 = 1,
-    CollectionFiba2014Interpretation,
-    
-}CollectionType;
-
 @interface Collection : NSObject
 
 @property (nonatomic, copy) NSString * oid;
