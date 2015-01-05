@@ -15,7 +15,7 @@
                         <sections>
                             <tableViewSection headerTitle="FIBA规则" id="nE4-7B-x3k">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" textLabel="wNI-oV-vhg" detailTextLabel="sz3-Va-dMQ" style="IBUITableViewCellStyleValue1" id="S9f-ji-7cM">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="wNI-oV-vhg" detailTextLabel="sz3-Va-dMQ" style="IBUITableViewCellStyleValue1" id="S9f-ji-7cM">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S9f-ji-7cM" id="KCF-cA-cVA">
                                             <autoresizingMask key="autoresizingMask"/>

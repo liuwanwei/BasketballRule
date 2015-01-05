@@ -57,6 +57,10 @@
             [self showCollections:[[CollectionManager defaultInstance] nbaCollections]];
         }
     }
+    
+    if (indexPath.row == 0) {
+        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
 }
 
 

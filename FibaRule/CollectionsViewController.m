@@ -67,6 +67,7 @@
         [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:index];
     }
     
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
