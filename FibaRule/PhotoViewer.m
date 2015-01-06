@@ -41,7 +41,7 @@
 #pragma mark IDMPhotoBrowserDelegate
 - (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser didDismissActionSheetWithButtonIndex:(NSUInteger)buttonIndex photoIndex:(NSUInteger)photoIndex{
     if (buttonIndex == 0) {
-        [[AlertViewTextEditor defaultInstance] showText:@"帮我记住" title:@"添加书签" message:@"添加后可以随时在规则对应的书签界面中查看" completed:^(NSString * text){
+        [[AlertViewTextEditor defaultInstance] showWithPlaceHolder:@"请输入书签名字" title:@"添加书签" completed:^(NSString * text){
             // 加入书签
             IDMPhoto * photo = [photoBrowser photoAtIndex:photoIndex];
             NSURL * photoUrl = photo.photoURL;
