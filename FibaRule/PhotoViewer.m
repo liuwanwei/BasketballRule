@@ -32,7 +32,7 @@
     pb.delegate = self;
     pb.displayActionButton = YES;
     pb.displayCounterLabel = YES;
-    pb.actionButtonTitles = @[@"收藏"];
+    pb.actionButtonTitles = @[@"加入书签"];
     [pb setInitialPageIndex:firstPage];
     
     [kWindow.rootViewController presentViewController:pb animated:YES completion:nil];
@@ -52,6 +52,8 @@
             collection.type = [DataSource dataTypeForUrl:collection.url];
             
             [[CollectionManager defaultInstance] addCollection:collection];
+            
+            [MBProgressManager toast:@"添加书签成功" duration:1.0 inView:photoBrowser.view];
         }];
     }
 }
