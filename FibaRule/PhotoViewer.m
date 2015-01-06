@@ -53,7 +53,7 @@
             
             [[CollectionManager defaultInstance] addCollection:collection];
             
-            [MBProgressManager toast:@"添加书签成功" duration:1.0 inView:photoBrowser.view];
+            [MBProgressManager toast:@"添加书签成功" delay:1.0 inView:photoBrowser.view];
         }];
     }
 }
