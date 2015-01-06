@@ -17,6 +17,10 @@
 
 @interface CollectionManager()
 
+@property (nonatomic, strong) NSArray * fiba2014Collections;
+@property (nonatomic, strong) NSArray * fiba2014InterpretationCollections;
+@property (nonatomic, strong) NSArray * nbaCollections;
+
 @property (nonatomic, strong) FMDatabase * database;
 @property (nonatomic, copy) NSComparisonResult (^compareCollection)(Collection * obj1, Collection * obj2);
 
@@ -168,6 +172,26 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:kCollectionChanged object:self userInfo:@{@"type":collection.type}];
     }
 
+}
+
+// 根据数据类型获取收藏信息
+- (NSArray *)collectionsForType:(DataType)type{
+    NSArray * array = nil;
+    switch (type) {
+        case DataFiba2014:
+            array = self.fiba2014Collections;
+            break;
+        case DataFiba2014Interpretation:
+            array = self.fiba2014InterpretationCollections;
+            break;
+        case DataNba:
+            array = self.nbaCollections;
+            break;
+        default:
+            break;
+    }
+    
+    return array;
 }
 
 - (BOOL)executeUpdate:(NSString *)sql{

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "DataSource.h"
 
 #define kCollectionChanged          @"Fiba2014CollectionChanged"
 
@@ -15,13 +16,10 @@
 
 @interface CollectionManager : NSObject 
 
-@property (nonatomic, strong) NSArray * fiba2014Collections;
-@property (nonatomic, strong) NSArray * fiba2014InterpretationCollections;
-@property (nonatomic, strong) NSArray * nbaCollections;
-
 + (CollectionManager *)defaultInstance;
 
 - (void)addCollection:(Collection *)collection;
 - (void)removeCollection:(Collection *)collection;
+- (NSArray *)collectionsForType:(DataType)type;
 
 @end

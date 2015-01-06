@@ -40,13 +40,13 @@
         CollectionManager * cm = [CollectionManager defaultInstance];
         switch (indexPath.section) {
             case 0:
-                collectionCount = cm.fiba2014Collections.count;
+                collectionCount = [cm collectionsForType:DataFiba2014].count;
                 break;
             case 1:
-                collectionCount = cm.fiba2014InterpretationCollections.count;
+                collectionCount = [cm collectionsForType:DataFiba2014Interpretation].count;
                 break;
             case 2:
-                collectionCount = cm.nbaCollections.count;
+                collectionCount = [cm collectionsForType:DataNba].count;
                 break;
             default:
                 break;
@@ -71,21 +71,21 @@
             [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
         }else if(indexPath.row == 1){
             // 展示我的收藏
-            [self showCollections:[[CollectionManager defaultInstance] fiba2014Collections]];
+            [self showCollections:[[CollectionManager defaultInstance] collectionsForType:DataFiba2014]];
         }
     }else if(indexPath.section == 1){
         if (indexPath.row == 0) {
             NSArray * photos = [DataSource photosForCollectionType:DataFiba2014Interpretation];
             [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
         }else if(indexPath.row == 1){
-            [self showCollections:[[CollectionManager defaultInstance] fiba2014InterpretationCollections]];
+            [self showCollections:[[CollectionManager defaultInstance] collectionsForType:DataFiba2014Interpretation]];
         }
     }else if(indexPath.section == 2){
         if (indexPath.row == 0) {
             NSArray * photos = [DataSource photosForCollectionType:DataNba];
             [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
         }else if(indexPath.row == 1){
-            [self showCollections:[[CollectionManager defaultInstance] nbaCollections]];
+            [self showCollections:[[CollectionManager defaultInstance] collectionsForType:DataNba]];
         }
     }
     
