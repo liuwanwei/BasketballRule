@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>30A35702A2D8F58F4981F14BB6FFD1202E0D296C</key>
-		<string>..Modules/BDFoundation/</string>
+		<string>..Modules/BDFoundation</string>
 		<key>9BDEEE4872B16407D918CF341217C785155083C7</key>
 		<string>..</string>
 	</dict>

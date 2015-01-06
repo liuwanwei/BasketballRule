@@ -18,7 +18,7 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
-    self.title = @"我的收藏";
+    self.title = @"书签";
     
     [[NSNotificationCenter defaultCenter] addObserverForName:kCollectionChanged object:nil queue:nil usingBlock:^(NSNotification * note){
         self.collections = [[CollectionManager defaultInstance] fiba2014Collections];

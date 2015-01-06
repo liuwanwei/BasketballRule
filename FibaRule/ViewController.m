@@ -23,6 +23,9 @@
     [super viewDidLoad];
 
     self.clearsSelectionOnViewWillAppear = YES;
+    [[NSNotificationCenter defaultCenter] addObserverForName:kCollectionChanged object:nil queue:nil usingBlock:^(NSNotification * note){
+        [self.tableView reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,8 +33,36 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 #pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 1) {
+        NSInteger collectionCount = 0;
+        CollectionManager * cm = [CollectionManager defaultInstance];
+        switch (indexPath.section) {
+            case 0:
+                collectionCount = cm.fiba2014Collections.count;
+                break;
+            case 1:
+                collectionCount = cm.fiba2014InterpretationCollections.count;
+                break;
+            case 2:
+                collectionCount = cm.nbaCollections.count;
+                break;
+            default:
+                break;
+        }
+        
+        NSString * text;
+        if (collectionCount != 0) {
+            text = [NSString stringWithFormat:@"%d", (int)collectionCount];
+        }else{
+            text = @"空";
+        }
+        
+        cell.detailTextLabel.text = text;
+    }
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
