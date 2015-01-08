@@ -19,22 +19,22 @@
 		FBA8A2441A5971010054AEF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA8A2431A5971010054AEF9 /* Images.xcassets */; };
 		FBA8A2471A5971010054AEF9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA8A2451A5971010054AEF9 /* LaunchScreen.xib */; };
 		FBA8A2531A5971010054AEF9 /* FibaRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2521A5971010054AEF9 /* FibaRuleTests.m */; };
-		FBA8A27F1A597FAE0054AEF9 /* AlertViewTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A25F1A597FAE0054AEF9 /* AlertViewTextEditor.m */; };
-		FBA8A2801A597FAE0054AEF9 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2611A597FAE0054AEF9 /* BaseModel.m */; };
-		FBA8A2811A597FAE0054AEF9 /* BaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2631A597FAE0054AEF9 /* BaseOperation.m */; };
-		FBA8A2821A597FAE0054AEF9 /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2651A597FAE0054AEF9 /* BaseResponse.m */; };
-		FBA8A2831A597FAE0054AEF9 /* BaseResponseCore.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2671A597FAE0054AEF9 /* BaseResponseCore.m */; };
-		FBA8A2841A597FAE0054AEF9 /* DomainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A26A1A597FAE0054AEF9 /* DomainManager.m */; };
-		FBA8A2851A597FAE0054AEF9 /* JDJsonDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A26C1A597FAE0054AEF9 /* JDJsonDecoder.m */; };
-		FBA8A2861A597FAE0054AEF9 /* MBProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A26F1A597FAE0054AEF9 /* MBProgressManager.m */; };
-		FBA8A2871A597FAE0054AEF9 /* NSDate+Formatted.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2711A597FAE0054AEF9 /* NSDate+Formatted.m */; };
-		FBA8A2881A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2731A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m */; };
-		FBA8A2891A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2751A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m */; };
-		FBA8A28A1A597FAE0054AEF9 /* NSString+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A2771A597FAE0054AEF9 /* NSString+Additional.m */; };
-		FBA8A28C1A597FAE0054AEF9 /* TextEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A27A1A597FAE0054AEF9 /* TextEditViewController.m */; };
-		FBA8A28D1A597FAE0054AEF9 /* UIImageView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A27C1A597FAE0054AEF9 /* UIImageView+Additional.m */; };
-		FBA8A28E1A597FAE0054AEF9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA8A27E1A597FAE0054AEF9 /* Utils.m */; };
 		FBAC91E51A5AC3850052414C /* PhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC91E41A5AC3850052414C /* PhotoViewer.m */; };
+		FBAC922B1A5ED7060052414C /* AlertViewTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC920B1A5ED7050052414C /* AlertViewTextEditor.m */; };
+		FBAC922C1A5ED7060052414C /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC920D1A5ED7050052414C /* BaseModel.m */; };
+		FBAC922D1A5ED7060052414C /* BaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC920F1A5ED7050052414C /* BaseOperation.m */; };
+		FBAC922E1A5ED7060052414C /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC92111A5ED7050052414C /* BaseResponse.m */; };
+		FBAC922F1A5ED7060052414C /* BaseResponseCore.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC92131A5ED7050052414C /* BaseResponseCore.m */; };
+		FBAC92301A5ED7060052414C /* DomainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC92161A5ED7050052414C /* DomainManager.m */; };
+		FBAC92311A5ED7060052414C /* JDJsonDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC92181A5ED7050052414C /* JDJsonDecoder.m */; };
+		FBAC92321A5ED7060052414C /* MBProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC921B1A5ED7060052414C /* MBProgressManager.m */; };
+		FBAC92331A5ED7060052414C /* NSDate+Formatted.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC921D1A5ED7060052414C /* NSDate+Formatted.m */; };
+		FBAC92341A5ED7060052414C /* NSDictionary+QueryStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC921F1A5ED7060052414C /* NSDictionary+QueryStringBuilder.m */; };
+		FBAC92351A5ED7060052414C /* NSMutableDictionary+SafeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC92211A5ED7060052414C /* NSMutableDictionary+SafeSet.m */; };
+		FBAC92361A5ED7060052414C /* NSString+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC92231A5ED7060052414C /* NSString+Additional.m */; };
+		FBAC92381A5ED7060052414C /* TextEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC92261A5ED7060052414C /* TextEditViewController.m */; };
+		FBAC92391A5ED7060052414C /* UIImageView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC92281A5ED7060052414C /* UIImageView+Additional.m */; };
+		FBAC923A1A5ED7060052414C /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAC922A1A5ED7060052414C /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,41 +72,40 @@
 		FBA8A24C1A5971010054AEF9 /* FibaRuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FibaRuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA8A2511A5971010054AEF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBA8A2521A5971010054AEF9 /* FibaRuleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FibaRuleTests.m; sourceTree = "<group>"; };
-		FBA8A25E1A597FAE0054AEF9 /* AlertViewTextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewTextEditor.h; sourceTree = "<group>"; };
-		FBA8A25F1A597FAE0054AEF9 /* AlertViewTextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewTextEditor.m; sourceTree = "<group>"; };
-		FBA8A2601A597FAE0054AEF9 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
-		FBA8A2611A597FAE0054AEF9 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
-		FBA8A2621A597FAE0054AEF9 /* BaseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseOperation.h; sourceTree = "<group>"; };
-		FBA8A2631A597FAE0054AEF9 /* BaseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseOperation.m; sourceTree = "<group>"; };
-		FBA8A2641A597FAE0054AEF9 /* BaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
-		FBA8A2651A597FAE0054AEF9 /* BaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
-		FBA8A2661A597FAE0054AEF9 /* BaseResponseCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponseCore.h; sourceTree = "<group>"; };
-		FBA8A2671A597FAE0054AEF9 /* BaseResponseCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponseCore.m; sourceTree = "<group>"; };
-		FBA8A2681A597FAE0054AEF9 /* BDFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFoundation.h; sourceTree = "<group>"; };
-		FBA8A2691A597FAE0054AEF9 /* DomainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomainManager.h; sourceTree = "<group>"; };
-		FBA8A26A1A597FAE0054AEF9 /* DomainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomainManager.m; sourceTree = "<group>"; };
-		FBA8A26B1A597FAE0054AEF9 /* JDJsonDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDJsonDecoder.h; sourceTree = "<group>"; };
-		FBA8A26C1A597FAE0054AEF9 /* JDJsonDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDJsonDecoder.m; sourceTree = "<group>"; };
-		FBA8A26D1A597FAE0054AEF9 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
-		FBA8A26E1A597FAE0054AEF9 /* MBProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressManager.h; sourceTree = "<group>"; };
-		FBA8A26F1A597FAE0054AEF9 /* MBProgressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressManager.m; sourceTree = "<group>"; };
-		FBA8A2701A597FAE0054AEF9 /* NSDate+Formatted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatted.h"; sourceTree = "<group>"; };
-		FBA8A2711A597FAE0054AEF9 /* NSDate+Formatted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatted.m"; sourceTree = "<group>"; };
-		FBA8A2721A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+QueryStringBuilder.h"; sourceTree = "<group>"; };
-		FBA8A2731A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+QueryStringBuilder.m"; sourceTree = "<group>"; };
-		FBA8A2741A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SafeSet.h"; sourceTree = "<group>"; };
-		FBA8A2751A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SafeSet.m"; sourceTree = "<group>"; };
-		FBA8A2761A597FAE0054AEF9 /* NSString+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additional.h"; sourceTree = "<group>"; };
-		FBA8A2771A597FAE0054AEF9 /* NSString+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additional.m"; sourceTree = "<group>"; };
-		FBA8A2781A597FAE0054AEF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FBA8A2791A597FAE0054AEF9 /* TextEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEditViewController.h; sourceTree = "<group>"; };
-		FBA8A27A1A597FAE0054AEF9 /* TextEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEditViewController.m; sourceTree = "<group>"; };
-		FBA8A27B1A597FAE0054AEF9 /* UIImageView+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Additional.h"; sourceTree = "<group>"; };
-		FBA8A27C1A597FAE0054AEF9 /* UIImageView+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Additional.m"; sourceTree = "<group>"; };
-		FBA8A27D1A597FAE0054AEF9 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
-		FBA8A27E1A597FAE0054AEF9 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		FBAC91E31A5AC3850052414C /* PhotoViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewer.h; sourceTree = "<group>"; };
 		FBAC91E41A5AC3850052414C /* PhotoViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewer.m; sourceTree = "<group>"; };
+		FBAC920A1A5ED7050052414C /* AlertViewTextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewTextEditor.h; sourceTree = "<group>"; };
+		FBAC920B1A5ED7050052414C /* AlertViewTextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewTextEditor.m; sourceTree = "<group>"; };
+		FBAC920C1A5ED7050052414C /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		FBAC920D1A5ED7050052414C /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		FBAC920E1A5ED7050052414C /* BaseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseOperation.h; sourceTree = "<group>"; };
+		FBAC920F1A5ED7050052414C /* BaseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseOperation.m; sourceTree = "<group>"; };
+		FBAC92101A5ED7050052414C /* BaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
+		FBAC92111A5ED7050052414C /* BaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
+		FBAC92121A5ED7050052414C /* BaseResponseCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponseCore.h; sourceTree = "<group>"; };
+		FBAC92131A5ED7050052414C /* BaseResponseCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponseCore.m; sourceTree = "<group>"; };
+		FBAC92141A5ED7050052414C /* BDFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFoundation.h; sourceTree = "<group>"; };
+		FBAC92151A5ED7050052414C /* DomainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomainManager.h; sourceTree = "<group>"; };
+		FBAC92161A5ED7050052414C /* DomainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomainManager.m; sourceTree = "<group>"; };
+		FBAC92171A5ED7050052414C /* JDJsonDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDJsonDecoder.h; sourceTree = "<group>"; };
+		FBAC92181A5ED7050052414C /* JDJsonDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDJsonDecoder.m; sourceTree = "<group>"; };
+		FBAC92191A5ED7050052414C /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		FBAC921A1A5ED7060052414C /* MBProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressManager.h; sourceTree = "<group>"; };
+		FBAC921B1A5ED7060052414C /* MBProgressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressManager.m; sourceTree = "<group>"; };
+		FBAC921C1A5ED7060052414C /* NSDate+Formatted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatted.h"; sourceTree = "<group>"; };
+		FBAC921D1A5ED7060052414C /* NSDate+Formatted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatted.m"; sourceTree = "<group>"; };
+		FBAC921E1A5ED7060052414C /* NSDictionary+QueryStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+QueryStringBuilder.h"; sourceTree = "<group>"; };
+		FBAC921F1A5ED7060052414C /* NSDictionary+QueryStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+QueryStringBuilder.m"; sourceTree = "<group>"; };
+		FBAC92201A5ED7060052414C /* NSMutableDictionary+SafeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SafeSet.h"; sourceTree = "<group>"; };
+		FBAC92211A5ED7060052414C /* NSMutableDictionary+SafeSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SafeSet.m"; sourceTree = "<group>"; };
+		FBAC92221A5ED7060052414C /* NSString+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additional.h"; sourceTree = "<group>"; };
+		FBAC92231A5ED7060052414C /* NSString+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additional.m"; sourceTree = "<group>"; };
+		FBAC92251A5ED7060052414C /* TextEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEditViewController.h; sourceTree = "<group>"; };
+		FBAC92261A5ED7060052414C /* TextEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEditViewController.m; sourceTree = "<group>"; };
+		FBAC92271A5ED7060052414C /* UIImageView+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Additional.h"; sourceTree = "<group>"; };
+		FBAC92281A5ED7060052414C /* UIImageView+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Additional.m"; sourceTree = "<group>"; };
+		FBAC92291A5ED7060052414C /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		FBAC922A1A5ED7060052414C /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,47 +227,46 @@
 		FBA8A25C1A597FAD0054AEF9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				FBA8A25D1A597FAD0054AEF9 /* BDFoundation */,
+				FBAC92091A5ED7050052414C /* BDFoundation */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		FBA8A25D1A597FAD0054AEF9 /* BDFoundation */ = {
+		FBAC92091A5ED7050052414C /* BDFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				FBA8A25E1A597FAE0054AEF9 /* AlertViewTextEditor.h */,
-				FBA8A25F1A597FAE0054AEF9 /* AlertViewTextEditor.m */,
-				FBA8A2601A597FAE0054AEF9 /* BaseModel.h */,
-				FBA8A2611A597FAE0054AEF9 /* BaseModel.m */,
-				FBA8A2621A597FAE0054AEF9 /* BaseOperation.h */,
-				FBA8A2631A597FAE0054AEF9 /* BaseOperation.m */,
-				FBA8A2641A597FAE0054AEF9 /* BaseResponse.h */,
-				FBA8A2651A597FAE0054AEF9 /* BaseResponse.m */,
-				FBA8A2661A597FAE0054AEF9 /* BaseResponseCore.h */,
-				FBA8A2671A597FAE0054AEF9 /* BaseResponseCore.m */,
-				FBA8A2681A597FAE0054AEF9 /* BDFoundation.h */,
-				FBA8A2691A597FAE0054AEF9 /* DomainManager.h */,
-				FBA8A26A1A597FAE0054AEF9 /* DomainManager.m */,
-				FBA8A26B1A597FAE0054AEF9 /* JDJsonDecoder.h */,
-				FBA8A26C1A597FAE0054AEF9 /* JDJsonDecoder.m */,
-				FBA8A26D1A597FAE0054AEF9 /* Macro.h */,
-				FBA8A26E1A597FAE0054AEF9 /* MBProgressManager.h */,
-				FBA8A26F1A597FAE0054AEF9 /* MBProgressManager.m */,
-				FBA8A2701A597FAE0054AEF9 /* NSDate+Formatted.h */,
-				FBA8A2711A597FAE0054AEF9 /* NSDate+Formatted.m */,
-				FBA8A2721A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.h */,
-				FBA8A2731A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m */,
-				FBA8A2741A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.h */,
-				FBA8A2751A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m */,
-				FBA8A2761A597FAE0054AEF9 /* NSString+Additional.h */,
-				FBA8A2771A597FAE0054AEF9 /* NSString+Additional.m */,
-				FBA8A2781A597FAE0054AEF9 /* README.md */,
-				FBA8A2791A597FAE0054AEF9 /* TextEditViewController.h */,
-				FBA8A27A1A597FAE0054AEF9 /* TextEditViewController.m */,
-				FBA8A27B1A597FAE0054AEF9 /* UIImageView+Additional.h */,
-				FBA8A27C1A597FAE0054AEF9 /* UIImageView+Additional.m */,
-				FBA8A27D1A597FAE0054AEF9 /* Utils.h */,
-				FBA8A27E1A597FAE0054AEF9 /* Utils.m */,
+				FBAC920A1A5ED7050052414C /* AlertViewTextEditor.h */,
+				FBAC920B1A5ED7050052414C /* AlertViewTextEditor.m */,
+				FBAC920C1A5ED7050052414C /* BaseModel.h */,
+				FBAC920D1A5ED7050052414C /* BaseModel.m */,
+				FBAC920E1A5ED7050052414C /* BaseOperation.h */,
+				FBAC920F1A5ED7050052414C /* BaseOperation.m */,
+				FBAC92101A5ED7050052414C /* BaseResponse.h */,
+				FBAC92111A5ED7050052414C /* BaseResponse.m */,
+				FBAC92121A5ED7050052414C /* BaseResponseCore.h */,
+				FBAC92131A5ED7050052414C /* BaseResponseCore.m */,
+				FBAC92141A5ED7050052414C /* BDFoundation.h */,
+				FBAC92151A5ED7050052414C /* DomainManager.h */,
+				FBAC92161A5ED7050052414C /* DomainManager.m */,
+				FBAC92171A5ED7050052414C /* JDJsonDecoder.h */,
+				FBAC92181A5ED7050052414C /* JDJsonDecoder.m */,
+				FBAC92191A5ED7050052414C /* Macro.h */,
+				FBAC921A1A5ED7060052414C /* MBProgressManager.h */,
+				FBAC921B1A5ED7060052414C /* MBProgressManager.m */,
+				FBAC921C1A5ED7060052414C /* NSDate+Formatted.h */,
+				FBAC921D1A5ED7060052414C /* NSDate+Formatted.m */,
+				FBAC921E1A5ED7060052414C /* NSDictionary+QueryStringBuilder.h */,
+				FBAC921F1A5ED7060052414C /* NSDictionary+QueryStringBuilder.m */,
+				FBAC92201A5ED7060052414C /* NSMutableDictionary+SafeSet.h */,
+				FBAC92211A5ED7060052414C /* NSMutableDictionary+SafeSet.m */,
+				FBAC92221A5ED7060052414C /* NSString+Additional.h */,
+				FBAC92231A5ED7060052414C /* NSString+Additional.m */,
+				FBAC92251A5ED7060052414C /* TextEditViewController.h */,
+				FBAC92261A5ED7060052414C /* TextEditViewController.m */,
+				FBAC92271A5ED7060052414C /* UIImageView+Additional.h */,
+				FBAC92281A5ED7060052414C /* UIImageView+Additional.m */,
+				FBAC92291A5ED7060052414C /* Utils.h */,
+				FBAC922A1A5ED7060052414C /* Utils.m */,
 			);
 			path = BDFoundation;
 			sourceTree = "<group>";
@@ -408,29 +406,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBA8A2831A597FAE0054AEF9 /* BaseResponseCore.m in Sources */,
-				FBA8A2871A597FAE0054AEF9 /* NSDate+Formatted.m in Sources */,
-				FBA8A2841A597FAE0054AEF9 /* DomainManager.m in Sources */,
-				FBA8A28D1A597FAE0054AEF9 /* UIImageView+Additional.m in Sources */,
-				FBA8A2811A597FAE0054AEF9 /* BaseOperation.m in Sources */,
-				FBA8A2881A597FAE0054AEF9 /* NSDictionary+QueryStringBuilder.m in Sources */,
+				FBAC92361A5ED7060052414C /* NSString+Additional.m in Sources */,
 				FBA8A23F1A5971010054AEF9 /* ViewController.m in Sources */,
+				FBAC92301A5ED7060052414C /* DomainManager.m in Sources */,
+				FBAC923A1A5ED7060052414C /* Utils.m in Sources */,
+				FBAC92391A5ED7060052414C /* UIImageView+Additional.m in Sources */,
 				FBA8A23C1A5971010054AEF9 /* AppDelegate.m in Sources */,
-				FBA8A2891A597FAE0054AEF9 /* NSMutableDictionary+SafeSet.m in Sources */,
 				FBA8A2391A5971010054AEF9 /* main.m in Sources */,
 				FB2D08811A599F7000A6AF77 /* DataSource.m in Sources */,
 				FB2D087B1A5996F500A6AF77 /* Collection.m in Sources */,
+				FBAC92341A5ED7060052414C /* NSDictionary+QueryStringBuilder.m in Sources */,
+				FBAC92331A5ED7060052414C /* NSDate+Formatted.m in Sources */,
+				FBAC922D1A5ED7060052414C /* BaseOperation.m in Sources */,
+				FBAC922B1A5ED7060052414C /* AlertViewTextEditor.m in Sources */,
+				FBAC922E1A5ED7060052414C /* BaseResponse.m in Sources */,
 				FB2D087E1A599AB100A6AF77 /* CollectionsViewController.m in Sources */,
-				FBA8A28E1A597FAE0054AEF9 /* Utils.m in Sources */,
-				FBA8A2861A597FAE0054AEF9 /* MBProgressManager.m in Sources */,
 				FB2D08781A59958A00A6AF77 /* CollectionManager.m in Sources */,
-				FBA8A28C1A597FAE0054AEF9 /* TextEditViewController.m in Sources */,
-				FBA8A28A1A597FAE0054AEF9 /* NSString+Additional.m in Sources */,
-				FBA8A2821A597FAE0054AEF9 /* BaseResponse.m in Sources */,
+				FBAC92381A5ED7060052414C /* TextEditViewController.m in Sources */,
+				FBAC922C1A5ED7060052414C /* BaseModel.m in Sources */,
 				FBAC91E51A5AC3850052414C /* PhotoViewer.m in Sources */,
-				FBA8A2801A597FAE0054AEF9 /* BaseModel.m in Sources */,
-				FBA8A2851A597FAE0054AEF9 /* JDJsonDecoder.m in Sources */,
-				FBA8A27F1A597FAE0054AEF9 /* AlertViewTextEditor.m in Sources */,
+				FBAC92321A5ED7060052414C /* MBProgressManager.m in Sources */,
+				FBAC92351A5ED7060052414C /* NSMutableDictionary+SafeSet.m in Sources */,
+				FBAC92311A5ED7060052414C /* JDJsonDecoder.m in Sources */,
+				FBAC922F1A5ED7060052414C /* BaseResponseCore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

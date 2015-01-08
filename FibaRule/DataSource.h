@@ -20,6 +20,10 @@ typedef enum {
     DataFiba2014 = 1,
     DataFiba2014Interpretation,
     DataNba,
+    
+    DataFiba2014Standard,
+    DataFiba2014InterpretationStandard,
+    DataNbaStandard,
 }DataType;
 
 @interface DataSource : NSObject

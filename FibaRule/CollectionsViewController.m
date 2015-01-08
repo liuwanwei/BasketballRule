@@ -11,6 +11,7 @@
 #import "DataSource.h"
 #import "CollectionManager.h"
 #import "PhotoViewer.h"
+#import "BDFoundation.h"
 
 @implementation CollectionsViewController
 
@@ -18,12 +19,14 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
-    self.title = @"书签";
+//    self.title = @"书签";
     
     [[NSNotificationCenter defaultCenter] addObserverForName:kCollectionChanged object:nil queue:nil usingBlock:^(NSNotification * note){
         self.collections = [[CollectionManager defaultInstance] collectionsForType:self.collectionType];
         [self.tableView reloadData];
     }];
+  
+    [Utils hideExtraCellsForTableView:self.tableView];
 }
 
 - (void)dealloc{

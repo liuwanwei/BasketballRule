@@ -64,44 +64,36 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.section == 0) {
-        if (indexPath.row == 0) {
-            // 展示图片浏览器
-            NSArray * photos = [DataSource photosForCollectionType:DataFiba2014];
-            [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
-        }else if(indexPath.row == 1){
-            // 展示我的收藏
-            [self showCollections:[[CollectionManager defaultInstance] collectionsForType:DataFiba2014]];
-        }
-    }else if(indexPath.section == 1){
-        if (indexPath.row == 0) {
-            NSArray * photos = [DataSource photosForCollectionType:DataFiba2014Interpretation];
-            [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
-        }else if(indexPath.row == 1){
-            [self showCollections:[[CollectionManager defaultInstance] collectionsForType:DataFiba2014Interpretation]];
-        }
+    DataType type = DataNone;
+    if (indexPath.row == 0) {
+        type = DataFiba2014;
+//        if (indexPath.row == 0) {
+//            // 展示图片浏览器
+//            NSArray * photos = [DataSource photosForCollectionType:DataFiba2014];
+//            [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
+//        }
+    }else if(indexPath.row == 1){
+        type = DataFiba2014Interpretation;
     }else if(indexPath.section == 2){
-        if (indexPath.row == 0) {
-            NSArray * photos = [DataSource photosForCollectionType:DataNba];
-            [[PhotoViewer defaultInstance] showPhotos:photos withFirstPage:0];
-        }else if(indexPath.row == 1){
-            [self showCollections:[[CollectionManager defaultInstance] collectionsForType:DataNba]];
-        }
+        type = DataNba;
     }
     
-    if (indexPath.row == 0) {
-        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    }
+    // 展示我的收藏
+    [self showCollectionsWithType:type];
+
+    
+//    if (indexPath.row == 0) {
+//        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    }
 }
 
 
-- (void)showCollections:(NSArray *)collections{
-    CollectionsViewController * vc = [[CollectionsViewController alloc] initWithStyle:UITableViewStylePlain];
+- (void)showCollectionsWithType:(DataType)type{
+    NSArray * collections = [[CollectionManager defaultInstance] collectionsForType:type];
+    UIStoryboard * sb = STORYBOARD(@"Main");
+    CollectionsViewController * vc = [sb instantiateViewControllerWithIdentifier:@"CollectionsViewController"];
     vc.collections = collections;
-    if (collections.count > 0) {
-        Collection * collection = collections[0];
-        vc.collectionType = (DataType)[collection.type integerValue];
-    }
+    vc.collectionType = type;
     
     [self.navigationController pushViewController:vc animated:YES];
 }
